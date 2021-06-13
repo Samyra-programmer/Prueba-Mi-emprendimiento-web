@@ -1,0 +1,38 @@
+//This file is for create your style with relation on space of main
+.main {
+    display: flex;
+}
+
+.icons {
+    font-size: $large;
+    i {
+        padding: .5rem;
+    }
+}
+.photo {
+    width: 100%;
+    text-align: center;
+
+    &__img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: 1px solid #808080;
+
+        @include small-break {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        @include medium-break {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        @include large-break {
+            width: 10rem;
+            height: 10rem;
+        }
+
+    }
+}

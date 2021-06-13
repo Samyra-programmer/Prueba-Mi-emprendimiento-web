@@ -1,0 +1,10 @@
+//This file you will create your style for buttons inside of the project
+.footer__button{
+    background-color: $tangerine;
+    border-radius: 5px 5px 5px 5px;
+    padding: .4rem;
+    &:hover{
+        background-color: $white;
+        color: $black;
+    }
+}

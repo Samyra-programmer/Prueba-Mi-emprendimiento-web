@@ -1,0 +1,46 @@
+//This file is for create your style with relation on space of footer
+.footer {
+    background: $black;
+    color: $white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+    font-family: $poppins;
+    text-align: center;
+
+    @include small-break {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-block-end: 0;
+    }
+    &__container--left{
+        margin-left: 1rem;
+    }
+    &__container--right{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 1rem;
+
+        a {
+            padding: 0 1rem;
+            text-decoration: none;
+            color: $white;
+        }
+
+        @include small-break {
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-block-end: 0;
+            a {
+                padding: 1rem 0 .5rem 0;
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}

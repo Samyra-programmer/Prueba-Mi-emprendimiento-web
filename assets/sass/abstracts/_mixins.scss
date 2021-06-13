@@ -1,0 +1,24 @@
+//This file you will create your mixins inside of the project
+@mixin small-break{
+    @media (max-width: $break-small) {
+        @content;
+    }
+}
+
+@mixin medium-break{
+    @media (min-width:$break_small) and (max-width:$break_medium){
+        @content;       
+    } 
+}
+    
+@mixin large-break{
+    @media (min-width:$break_medium) and (max-width:$break_large){
+        @content;       
+    } 
+}
+
+@mixin xlarge-break{
+    @media (min-width:$break_x-large){
+        @content;       
+    } 
+}

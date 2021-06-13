@@ -1,0 +1,49 @@
+.svg {
+    width: 10rem;
+    margin: 6rem auto 0;
+
+    @include small-break {
+        margin: 2rem auto 0;
+        width: 18rem;
+    }
+
+    @include medium-break {
+        margin: 2rem auto 0;
+        width: 18rem;
+    }
+
+    @include large-break {
+        margin: 4rem auto 0;
+        width: 14rem;
+    }
+
+    @include xlarge-break {
+        margin: 4rem auto 0;
+        width: 14rem;
+    }
+    &__wheel {
+        animation: 3s rotate linear infinite;
+        transform-origin: 79% 79%;
+    }
+}
+
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

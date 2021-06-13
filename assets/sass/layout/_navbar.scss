@@ -1,0 +1,92 @@
+//This file is for create your style with relation on space of navbar
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: $black;
+    height: 60px;
+    padding-left: 1rem;
+    justify-content: space-between;
+
+    @include small-break {
+        height: 90px;
+    }
+
+    &__logo {
+        img {
+            width: 50px;
+            height: 50px;
+
+            @include small-break {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+
+        a {
+            margin: 0 20px;
+            font-weight: $font-regular;
+            font-size: $medium;
+            color: $white;
+            @include small-break {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__item {
+        list-style: none;
+        color: $white;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            font-family: $poppins;
+            font-weight: $font-regular;
+        }
+    }
+
+    &__icon {
+        display: none;
+        color: $white;
+        font-size: $xx-large;
+
+        &:hover {
+            color: $orange;
+        }
+
+        @include small-break {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 10px;
+        }
+
+    }
+}
+
+input#menu {
+    display: none;
+}
+
+@include small-break {
+    .navbar__container {
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    input:checked~.navbar__container {
+        max-height: 100px;
+        ;
+    }
+}

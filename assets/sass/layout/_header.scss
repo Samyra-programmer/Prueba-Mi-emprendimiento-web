@@ -1,0 +1,11 @@
+//This file is for create your style with relation on space of header
+.header{
+    &__img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        @include small-break{
+            width: 100%;
+        }
+    }
+}

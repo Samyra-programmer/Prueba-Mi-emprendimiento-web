@@ -1,0 +1,32 @@
+//You can change the name in this file
+
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+//@import
+//'vendors/scss/bootstrap.scss';
+
+@import
+  'base/base',
+  'base/reset',
+  'base/animation',
+  'base/typography';
+
+@import
+'layout/navbar',
+  'layout/header',
+  'layout/main',
+  'layout/grid',
+  'layout/section',
+  'layout/pagination',
+  'layout/footer';
+
+@import
+  'components/buttons',
+  'components/inputs';
+
+  //Pages
+
+  //Themes
